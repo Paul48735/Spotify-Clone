@@ -22,9 +22,9 @@ body {
     flex-direction: column;
     background: #121212;
     height: 570px;
-    width: 400px;
     margin-top: 70px;
     margin-left: 8px;
+    border-radius: 8px;
 }
 
 .library-header {
@@ -37,7 +37,7 @@ body {
     font-size: 14px;
 }
 
-.create-btn {
+.create-button {
     border: 0;
     border-radius: 999px;
     background: #242424;
@@ -47,10 +47,10 @@ body {
     color: #fff;
 }
 
-.filter-btn {
+.filter-button {
     display: flex;
     margin-left: 20px;
-    gap: 8px;    
+    gap: 8px;
 }
 
 .library-tools {
@@ -71,7 +71,7 @@ body {
     border: 0;
     background: transparent;
     cursor: pointer;
-    color: #b3b3b3;  
+    color: #b3b3b3;
 }
 
 .library-scroll {
@@ -105,8 +105,8 @@ body {
     object-fit: cover;
 }
 
-.artist-cover { 
-    border-radius: 50%; 
+.artist-cover {
+    border-radius: 50%;
 }
 
 .item-info {
@@ -123,4 +123,108 @@ body {
 .item-detail {
     color: white;
     font-size: 14px;
+}
+
+.home {
+    margin-top: 70px;
+    background: #121212;
+    overflow-y: auto;
+    border-radius: 8px;
+    width: 680px;
+    padding-left: 40px;
+}
+
+.content-filters {
+    margin-top: 25px;
+
+}
+
+.content-button {
+    padding: 9px 15px;
+    border: 0;
+    border-radius: 999px;
+    background: #242424;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+
+.quick-play {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 300px 300px;
+    gap: 8px 12px;
+    margin-top: 20px;
+
+}
+
+.quick-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 4px;
+    background: #2a2a2a;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.quick-card img {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+    object-fit: cover;
+}
+
+.section-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.section-heading h1 {
+    margin: 0;
+}
+
+.section-heading button {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    background: transparent;
+    margin-right: 40px;
+}
+
+.upcoming-release {
+    display: flex;
+    gap: 0px;
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+.upcoming-card {
+    width: 180px;
+    flex-shrink: 0;
+    display: grid;
+    gap: 7px;
+    border: 0px;
+    background: transparent;
+    color: white;
+    text-align: left;
+}
+
+.artist-name {
+    color: #b3b3b3;
+}
+
+.upcoming-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 7px;
+    object-fit: cover;
 }

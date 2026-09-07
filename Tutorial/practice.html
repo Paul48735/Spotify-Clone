@@ -9,15 +9,16 @@
 </head>
 
 <body>
-    <div>
-        <div class="library">
+    <main class="app-layout">
+
+        <aside class="library">
             <div class="library-header">
                 <h2 class="heading">Your Library</h2>
-                <button class="create-btn">+ Create</button>
+                <button class="create-button">+ Create</button>
             </div>
-            <div class="filter-btn">
-                <button class="create-btn">Playlists</button>
-                <button class="create-btn">Artists</button>
+            <div class="filter-button">
+                <button class="create-button">Playlists</button>
+                <button class="create-button">Artists</button>
             </div>
             <div class="library-scroll">
                 <div class="library-tools">
@@ -26,50 +27,23 @@
                 </div>
                 <div class="library-list">
                     <button class="library-item">
-                        <img class="cover" src="https://picsum.photos/seed/sleep-token/120" alt="">
+                        <img class="cover" src="https://picsum.photos/seed/liked-songs/120" alt="Liked Songs">
                         <span class="item-info">
                             <span class="item-title">Liked Songs</span>
                             <span class="item-detail">Playlist • Hornet</span>
                         </span>
                     </button>
                     <button class="library-item">
-                        <img class="cover" src="https://picsum.photos/seed/sleep-token/120" alt="">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120"
+                            alt="Blacklit Canopy Official">
                         <span class="item-info">
-                            <span class="item-title">Liked Songs</span>
-                            <span class="item-detail">Playlist • Hornet</span>
-                        </span>
-                    </button>
-                    <button class="library-item">
-                        <img class="cover" src="https://picsum.photos/seed/sleep-token/120" alt="">
-                        <span class="item-info">
-                            <span class="item-title">Liked Songs</span>
-                            <span class="item-detail">Playlist • Hornet</span>
-                        </span>
-                    </button>
-                    <button class="library-item">
-                        <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120" alt="">
-                        <span class="item-info">
-                            <span class="item-title">Blacilit Canopy Official</span>
-                            <span class="item-detail">Artist</span>
-                        </span>
-                    </button>
-                    <button class="library-item">
-                        <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120" alt="">
-                        <span class="item-info">
-                            <span class="item-title">Blacilit Canopy Official</span>
-                            <span class="item-detail">Artist</span>
-                        </span>
-                    </button>
-                    <button class="library-item">
-                        <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120" alt="">
-                        <span class="item-info">
-                            <span class="item-title">Blacilit Canopy Official</span>
+                            <span class="item-title">Blacklit Canopy Official</span>
                             <span class="item-detail">Artist</span>
                         </span>
                     </button>
                     <button class="library-item">
                         <img class="cover artist-cover"
-                            src="https://i.scdn.co/image/ab6761610000e5ebbcb1c184c322688f10cdce7a" alt="">
+                            src="https://i.scdn.co/image/ab6761610000e5ebbcb1c184c322688f10cdce7a" alt="Ado">
                         <span class="item-info">
                             <span class="item-title">Ado</span>
                             <span class="item-detail">Artist</span>
@@ -77,8 +51,76 @@
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
+        </aside>
+
+        <section class="home">
+            <div class="content-filters">
+                <button class="content-button">All</button>
+                <button class="content-button">Music</button>
+                <button class="content-button">Podcasts</button>
+            </div>
+            <div class="quick-play">
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/indie-rock/100" alt="Indie Rock Mix">
+                    <span>Indie Rock Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/sleep-mix/100" alt="Sleep Token Mix">
+                    <span>Sleep Token Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/dayseeker/100" alt="Dayseeker Mix">
+                    <span>Dayseeker Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/foo-fighters/100" alt="Foo Fighters Mix">
+                    <span>Foo Fighters Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/mgk/100" alt="MGK Mix">
+                    <span>MGK Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/daily-mix/100" alt="Daily Mix 4">
+                    <span>Daily Mix 4</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/sleep-token/100" alt="Sleep Token">
+                    <span>Sleep Token</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/staind/100" alt="Staind Mix">
+                    <span>Staind Mix</span>
+                </button>
+            </div>
+            <div class="section-heading">
+                <h1>Pre-save upcoming releases</h1>
+                <button type="button">Show all</button>
+            </div>
+            <div class="upcoming-release">
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/party-over/350" alt="Party's Over">
+                    <span>PARTY'S OVER</span>
+                    <span class="artist-name">Sueco</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/under-sun/350" alt="Everything Under The Sun">
+                    <span>Everything Under The Sun</span>
+                    <span class="artist-name">Nickelback</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/after-storm/350" alt="After The Storm">
+                    <span>After The Storm</span>
+                    <span class="artist-name">Skillet</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/unshatter/350" alt="Unshatter Film Soundtrack">
+                    <span>Unshatter Film Soundtrack</span>
+                    <span class="artist-name">Linkin Park</span>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
