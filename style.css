@@ -183,13 +183,13 @@ button { color: inherit; }
 .liked-cover { display: grid; place-items: center; background: linear-gradient(135deg, #4b16db, #b8f6d2); font-size: 22px; }
 .item-info { min-width: 0; display: grid; gap: 6px; }
 
-/* .item-info strong, .item-info small, .current-track strong, .current-track small {
+.item-info strong, .item-info small, .current-track strong, .current-track small {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.item-info strong { font-size: 16px; } */
+.item-info strong { font-size: 16px; }
 
 
 .home-content {

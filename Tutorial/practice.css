@@ -8,6 +8,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.app-layout {
+    height: calc(100vh - 160px);
+    display: grid;
+    grid-template-columns: minmax(280px, 28%) minmax(460px, 1fr) minmax(300px, 27%);
+    gap: 8px;
+    padding: 0 8px;
+}
+
 .library {
     color: white;
     display: flex;
@@ -66,14 +74,18 @@ body {
     color: #b3b3b3;  
 }
 
+.library-scroll {
+    overflow-y: auto;
+}
+
 .library-list {
+    flex: 1;
     min-height: 0;
     overflow-y: auto;
 }
 
 .library-item {
     width: 100%;
-    color: white;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -93,5 +105,22 @@ body {
     object-fit: cover;
 }
 
-.artist-cover { border-radius: 50%; }
-.item-info { min-width: 0; display: grid; gap: 6px; }
+.artist-cover { 
+    border-radius: 50%; 
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-title {
+    color: white;
+    font-weight: bold;
+}
+
+.item-detail {
+    color: white;
+    font-size: 14px;
+}
