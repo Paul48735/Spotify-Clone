@@ -1,194 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="topbar">
-        <nav class="history-buttons" aria-label="Navigation">
-            <button class="icon-button" type="button" aria-label="More options">•••</button>
-            <button class="icon-button" type="button" aria-label="Go back">‹</button>
-            <button class="icon-button" type="button" aria-label="Go forward">›</button>
-        </nav>
-        <div class="search-area">
-            <button class="home-button" type="button" aria-label="Home">⌂</button>
-            <label class="search-box">
-                <span class="search-icon">⌕</span>
-                <input type="search" placeholder="What do you want to play?" aria-label="Search">
-                <span class="browse-icon">▣</span>
-            </label>
+        <div class="topbar-left">
+            <button class="topbar-icon" type="button" aria-label="More options">•••</button>
+            <button class="topbar-icon" type="button" aria-label="Go back">‹</button>
+            <button class="topbar-icon" type="button" aria-label="Go forward">›</button>
         </div>
-        <div class="account-buttons">
-            <button class="icon-button" type="button" aria-label="Notifications">♧</button>
-            <button class="icon-button" type="button" aria-label="Friends">♙</button>
-            <button class="avatar-button" type="button" aria-label="Profile">H</button>
+
+        <div class="topbar-center">
+            <button class="home-button" type="button" aria-label="Home">&#8962;</button>
+            <div class="search-box">
+                <span class="search-symbol">&#128269;</span>
+                <input type="search" placeholder="What do you want to play?" aria-label="Search">
+                <span class="browse-symbol">&#9635;</span>
+            </div>
+        </div>
+
+        <div class="topbar-right">
+            <button class="topbar-icon small-icon" type="button" aria-label="Notifications">&#128276;</button>
+            <button class="topbar-icon small-icon" type="button" aria-label="Friends">&#128101;</button>
+            <button class="profile-button" type="button" aria-label="Profile">H</button>
         </div>
     </header>
 
     <main class="app-layout">
-        <aside class="panel library">
+
+        <aside class="library">
             <div class="library-header">
-                <h2>Your Library</h2>
-                <div class="library-actions">
-                    <button class="create-button" type="button"><span>＋</span> Create</button>
-                    <button class="expand-button" type="button" aria-label="Expand library">↗</button>
+                <h2 class="heading">Your Library</h2>
+                <button class="create-button">+ Create</button>
+            </div>
+            <div class="filter-button">
+                <button class="create-button">Playlists</button>
+                <button class="create-button">Artists</button>
+            </div>
+            <div class="library-scroll">
+                <div class="library-tools">
+                    <button class="search-library" type="button" aria-label="Search your library">⌕</button>
+                    <button class="recents-button" type="button">Recents <span>☷</span></button>
                 </div>
-            </div>
-            <div class="filter-buttons">
-                <button class="chip" type="button">Playlists</button>
-                <button class="chip" type="button">Artists</button>
-            </div>
-            <div class="library-tools">
-                <button class="search-library" type="button" aria-label="Search your library">⌕</button>
-                <button class="recents-button" type="button">Recents <span>☷</span></button>
-            </div>
-            <div class="library-list">
-                <button class="library-item" type="button">
-                    <span class="cover liked-cover">♥</span>
-                    <span class="item-info"><strong>Liked Songs</strong><small><span class="pin">◆</span> Playlist •
-                            Hornet</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover artist-cover" src="https://picsum.photos/seed/sleep-token/120" alt="Sleep Token">
-                    <span class="item-info"><strong>Sleep Token</strong><small>Artist</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120"
-                        alt="Blacklit Canopy Official">
-                    <span class="item-info"><strong>Blacklit Canopy Official</strong><small>Artist</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover" src="https://picsum.photos/seed/epic-edm/120" alt="Epic EDM">
-                    <span class="item-info"><strong>Epic EDM</strong><small>Playlist • Hornet</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover" src="https://picsum.photos/seed/pop-music/120" alt="Epic Pop Music">
-                    <span class="item-info"><strong>Epic Pop Music</strong><small>Playlist • Hornet</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover" src="https://picsum.photos/seed/japanese-music/120" alt="Epic Japanese Music">
-                    <span class="item-info"><strong>Epic Japanese Music</strong><small>Playlist • Hornet</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover" src="https://picsum.photos/seed/morning-coffee/120" alt="Morning Coffee Music">
-                    <span class="item-info"><strong>MORNING COFFEE MUSIC ☕</strong><small>Playlist •
-                            Hornet</small></span>
-                </button>
-                <button class="library-item" type="button">
-                    <img class="cover" src="https://picsum.photos/seed/tsfh/120" alt="TSFH">
-                    <span class="item-info"><strong>TSFH</strong><small>Playlist • Hornet</small></span>
-                </button>
+                <div class="library-list">
+                    <button class="library-item">
+                        <img class="cover" src="https://picsum.photos/seed/liked-songs/120" alt="Liked Songs">
+                        <span class="item-info">
+                            <span class="item-title">Liked Songs</span>
+                            <span class="item-detail">Playlist • Hornet</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/blacklit/120"
+                            alt="Blacklit Canopy Official">
+                        <span class="item-info">
+                            <span class="item-title">Blacklit Canopy Official</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/sleep-token/120"
+                            alt="Sleep Token">
+                        <span class="item-info">
+                            <span class="item-title">Sleep Token</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/bring-me-the-horizon/120"
+                            alt="Bring Me The Horizon">
+                        <span class="item-info">
+                            <span class="item-title">Bring Me The Horizon</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/bad-omens/120" alt="Bad Omens">
+                        <span class="item-info">
+                            <span class="item-title">Bad Omens</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/architects/120"
+                            alt="Architects">
+                        <span class="item-info">
+                            <span class="item-title">Architects</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/spiritbox/120" alt="Spiritbox">
+                        <span class="item-info">
+                            <span class="item-title">Spiritbox</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                    <button class="library-item">
+                        <img class="cover artist-cover" src="https://picsum.photos/seed/spiritbox/120" alt="Spiritbox">
+                        <span class="item-info">
+                            <span class="item-title">Spiritbox</span>
+                            <span class="item-detail">Artist</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </aside>
 
-        <section class="panel home-content">
-            <div class="content-inner">
-                <div class="content-filters">
-                    <button class="chip active" type="button">All</button>
-                    <button class="chip" type="button">Music</button>
-                    <button class="chip" type="button">Podcasts</button>
-                </div>
-                <div class="quick-grid">
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/indie-rock/100"
-                            alt=""><strong>Indie Rock Mix</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/sleep-mix/100"
-                            alt=""><strong>Sleep Token Mix</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/dayseeker/100"
-                            alt=""><strong>Dayseeker Mix</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/foo-fighters/100"
-                            alt=""><strong>Foo Fighters Mix</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/mgk/100"
-                            alt=""><strong>MGK Mix</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/daily-mix/100"
-                            alt=""><strong>Daily Mix 4</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/token/100"
-                            alt=""><strong>Sleep Token</strong></button>
-                    <button class="quick-card" type="button"><img src="https://picsum.photos/seed/staind/100"
-                            alt=""><strong>Staind Mix</strong></button>
-                </div>
-                <div class="section-heading">
-                    <h1>Pre-save upcoming releases</h1>
-                    <button type="button">Show all</button>
-                </div>
-                <div class="album-grid">
-                    <article class="album-card"><img src="https://picsum.photos/seed/party-over/350"
-                            alt="Party's Over album cover"><strong>PARTY'S OVER</strong><span>Sueco</span></article>
-                    <article class="album-card"><img src="https://picsum.photos/seed/under-sun/350"
-                            alt="Everything Under The Sun album cover"><strong>Everything Under The
-                            Sun</strong><span>Nickelback</span></article>
-                    <article class="album-card"><img src="https://picsum.photos/seed/after-storm/350"
-                            alt="After The Storm album cover"><strong>After The Storm</strong><span>Skillet</span>
-                    </article>
-                    <article class="album-card"><img src="https://picsum.photos/seed/unshatter/350"
-                            alt="Unshatter album cover"><strong>Unshatter Film Soundtrack</strong><span>Linkin
-                            Park</span></article>
-                </div>
-
+        <section class="home">
+            <div class="content-filters">
+                <button class="content-button">All</button>
+                <button class="content-button">Music</button>
+                <button class="content-button">Podcasts</button>
+            </div>
+            <div class="quick-play">
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/indie-rock/100" alt="Indie Rock Mix">
+                    <span>Indie Rock Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/sleep-mix/100" alt="Sleep Token Mix">
+                    <span>Sleep Token Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/dayseeker/100" alt="Dayseeker Mix">
+                    <span>Dayseeker Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/foo-fighters/100" alt="Foo Fighters Mix">
+                    <span>Foo Fighters Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/mgk/100" alt="MGK Mix">
+                    <span>MGK Mix</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/daily-mix/100" alt="Daily Mix 4">
+                    <span>Daily Mix 4</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/sleep-token/100" alt="Sleep Token">
+                    <span>Sleep Token</span>
+                </button>
+                <button class="quick-card">
+                    <img class="" src="https://picsum.photos/seed/staind/100" alt="Staind Mix">
+                    <span>Staind Mix</span>
+                </button>
+            </div>
+            <div class="section-heading">
+                <h1>Pre-save upcoming releases</h1>
+                <button type="button">Show all</button>
+            </div>
+            <div class="upcoming-release">
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/party-over/350" alt="Party's Over">
+                    <span>PARTY'S OVER</span>
+                    <span class="artist-name">Sueco</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/under-sun/350" alt="Everything Under The Sun">
+                    <span>Everything Under The Sun</span>
+                    <span class="artist-name">Nickelback</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/after-storm/350" alt="After The Storm">
+                    <span>After The Storm</span>
+                    <span class="artist-name">Skillet</span>
+                </button>
+                <button class="upcoming-card">
+                    <img src="https://picsum.photos/seed/unshatter/350" alt="Unshatter Film Soundtrack">
+                    <span>Unshatter Film Soundtrack</span>
+                    <span class="artist-name">Linkin Park</span>
+                </button>
             </div>
         </section>
 
-        <aside class="panel now-playing">
-            <h2>Rokudenashi มิกซ์</h2>
-            <div class="now-playing-hero">
-                <img src="https://picsum.photos/seed/bansanka/600/760" alt="Bansanka song artwork">
+        <aside class="now-playing">
+            <div class="now-playing-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02882265cd9bdded9ea9a153b9" alt="Sleep Token">
+                <h2 class="now-playing-text">Sleep Token Mix</h2>
                 <div class="song-overlay">
-                    <div>
-                        <h1>晩餐歌 - Bansanka</h1>
-                        <p>tuki.</p>
+                    <div class="song-info">
+                        <h3 class="now-playing-song">Caramel</h3>
+                        <p class="now-playing-artist">Sleep Token</p>
                     </div>
-                    <div class="song-actions"><span>×</span><span>＋</span></div>
+                    <div class="now-playing-action">
+                        <button type="button" aria-label="Add to library">+</button>
+                    </div>
                 </div>
             </div>
-            <article class="artist-card">
-                <img src="https://picsum.photos/seed/about-artist/650/300" alt="About the artist">
-                <h3>About the artist</h3>
-            </article>
+            <div class="about-the-artist">
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebd00c2ff422829437e6b5f1e0" alt="">
+                    <h2>About the artist</h2>
+                    <div class="artist-info">
+                        <h3>Sleep Token</h3>
+                        <div class="artist-stats">
+                            <p>5,030,836 monthly listeners</p>
+                            <button class="follow-button">Follow</button>
+                        </div>
+                        <p class="artist-description">Even in Arcadia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+
+            </div>
         </aside>
+
     </main>
 
     <footer class="player">
         <div class="current-track">
-            <img src="https://picsum.photos/seed/bansanka/100" alt="Bansanka cover">
-            <div><strong>晩餐歌 - Bansanka</strong><small>tuki.</small></div>
-            <button type="button" aria-label="Remove from library">×</button>
-            <button type="button" aria-label="Add to library">＋</button>
+            <img src="https://i.scdn.co/image/ab67616d00001e02882265cd9bdded9ea9a153b9" alt="Caramel cover">
+            <div class="current-track-info">
+                <h3>Caramel</h3>
+                <p>Sleep Token</p>
+            </div>
+            <button class="current-track-button" type="button" aria-label="Remove from playlist">&times;</button>
+            <button class="current-track-button add-track-button" type="button"
+                aria-label="Add to liked songs">+</button>
         </div>
+
         <div class="player-center">
-            <div class="transport-buttons">
-                <button class="green" type="button" aria-label="Shuffle">⌘</button>
-                <button type="button" aria-label="Previous">◀</button>
-                <button class="play-button" type="button" aria-label="Play">▶</button>
-                <button type="button" aria-label="Next">▶</button>
-                <button type="button" aria-label="Repeat">↻</button>
+            <div class="player-controls">
+                <button type="button" aria-label="Shuffle">&#8644;</button>
+                <button type="button" aria-label="Previous song">&#9664;</button>
+                <button class="play-button" type="button" aria-label="Play">&#9654;</button>
+                <button type="button" aria-label="Next song">&#9654;</button>
+                <button type="button" aria-label="Repeat">&#8635;</button>
             </div>
-            <div class="progress-row"><span>2:03</span>
-                <div class="progress"><i></i></div><span>3:37</span>
+            <div class="player-progress">
+                <span>0:02</span>
+                <div class="progress-track">
+                    <div class="progress-current"></div>
+                </div>
+                <span>2:52</span>
             </div>
         </div>
-        <div class="player-options">
-            <button type="button" aria-label="Lyrics">♩</button>
-            <button type="button" aria-label="Queue">☷</button>
-            <button type="button" aria-label="Connect to device">♧</button>
-            <span>◀</span>
-            <div class="volume"><i></i></div>
-            <button type="button" aria-label="Full screen">⛶</button>
+
+        <div class="player-tools">
+            <button type="button" aria-label="Lyrics">&#9835;</button>
+            <button type="button" aria-label="Queue">&#9776;</button>
+            <button type="button" aria-label="Devices">&#9643;</button>
+            <button type="button" aria-label="Volume">&#128266;</button>
+            <div class="volume-track">
+                <div class="volume-current"></div>
+            </div>
+            <button type="button" aria-label="Full screen">&#9974;</button>
         </div>
     </footer>
-</body>
-
-</html>
->
-
-</div>
-</div>
-
 </body>
 
 </html>
