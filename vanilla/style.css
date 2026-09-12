@@ -201,7 +201,9 @@ body {
     overflow-y: auto;
 }
 
-.library-list {}
+.library-list {
+
+}
 
 .library-item {
     width: 100%;
