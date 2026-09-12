@@ -1,0 +1,140 @@
+.player {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    background: black;
+}
+
+.current-track {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.current-track img {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.current-track-info {
+    min-width: 0;
+}
+
+.current-track-info h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.current-track-info p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.current-track-button {
+    border: 0;
+    background: transparent;
+    color: #b3b3b3;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.add-track-button {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.player-center {
+    width: 40%;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.player-controls button {
+    border: 0;
+    background: transparent;
+    color: #b3b3b3;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.player-controls .play-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+}
+
+.player-controls button.active {
+    color: #1ed760;
+}
+
+.player-progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.progress-track {
+    height: 4px;
+    flex: 1;
+    border-radius: 999px;
+    background: #4d4d4d;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-current {
+    width: 0%;
+    height: 100%;
+    background: white;
+}
+
+.player-tools {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+.player-tools button {
+    border: 0;
+    background: transparent;
+    color: #b3b3b3;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volume-track {
+    width: 100px;
+    height: 4px;
+    border-radius: 999px;
+    background: #4d4d4d;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.volume-current {
+    width: 65%;
+    height: 100%;
+    background: white;
+}

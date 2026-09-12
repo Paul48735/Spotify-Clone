@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/player.css">
 </head>
 
 <body>
@@ -211,7 +212,7 @@
                 </div>
 
                 <div class="playlist-controls">
-                    <button class="playlist-play-button" type="button">▶</button>
+                    <button class="playlist-play-button" type="button" aria-label="Play playlist">▶</button>
                     <button type="button">↝</button>
                     <button type="button">＋</button>
                     <button type="button">•••</button>
@@ -256,7 +257,7 @@
                 </div>
             </div>
             <div class="credits">
-
+                
             </div>
         </aside>
 
@@ -277,14 +278,14 @@
 
         <div class="player-center">
             <div class="player-controls">
-                <button type="button" aria-label="Shuffle">&#8644;</button>
-                <button type="button" aria-label="Previous song">&#9664;</button>
+                <button id="shuffle-button" type="button" aria-label="Shuffle">&#8644;</button>
+                <button id="previous-button" type="button" aria-label="Previous song">&#9664;</button>
                 <button id="play-button" class="play-button" type="button" aria-label="Play">&#9654;</button>
-                <button type="button" aria-label="Next song">&#9654;</button>
-                <button type="button" aria-label="Repeat">&#8635;</button>
+                <button id="next-button" type="button" aria-label="Next song">&#9654;</button>
+                <button id="repeat-button" type="button" aria-label="Repeat">&#8635;</button>
             </div>
             <div class="player-progress">
-                <span>0:00</span>
+                <span id="progress-current-time">0:00</span>
                 <div class="progress-track">
                     <div class="progress-current"></div>
                 </div>
@@ -295,15 +296,15 @@
         <div class="player-tools">
             <button type="button" aria-label="Lyrics">&#9835;</button>
             <button type="button" aria-label="Queue">&#9776;</button>
-            <button type="button" aria-label="Volume">&#128266;</button>
-            <div class="volume-track">
-                <div class="volume-current"></div>
+            <button id="volume-button" type="button" aria-label="Mute">&#128266;</button>
+            <div id="volume-track" class="volume-track">
+                <div id="volume-current" class="volume-current"></div>
             </div>
             <button type="button" aria-label="Full screen">&#9974;</button>
         </div>
     </footer>
 </body>
 
-<script type="module" src="script.js"></script>
+<script type="module" src="js/app.js"></script>
 
 </html>

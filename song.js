@@ -6,7 +6,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/the-summoning/300",
-        duration: "6:35"
+        duration: "2:06",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/chokehold/300",
-        duration: "5:04"
+        duration: "3:37",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/granite/300",
-        duration: "3:45"
+        duration: "3:30",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/aqua-regia/300",
-        duration: "3:56"
+        duration: "3:56",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/ascensionism/300",
-        duration: "5:51"
+        duration: "5:51",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 6,
@@ -51,7 +56,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/are-you-really-okay/300",
-        duration: "5:06"
+        duration: "5:06",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 7,
@@ -60,7 +66,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/rain/300",
-        duration: "4:12"
+        duration: "4:12",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 8,
@@ -69,7 +76,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/take-me-back-to-eden/300",
-        duration: "8:20"
+        duration: "8:20",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 9,
@@ -78,7 +86,8 @@ export const songs = [
         artistId: "sleep-token",
         album: "Even in Arcadia",
         albumArt: "https://i.scdn.co/image/ab67616d00001e02882265cd9bdded9ea9a153b9",
-        duration: "5:13"
+        duration: "5:13",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 10,
@@ -87,7 +96,8 @@ export const songs = [
         artistId: "foo-fighters",
         album: "The Colour and the Shape",
         albumArt: "https://picsum.photos/seed/everlong/300",
-        duration: "4:10"
+        duration: "4:10",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 11,
@@ -96,7 +106,8 @@ export const songs = [
         artistId: "linkin-park",
         album: "Meteora",
         albumArt: "https://picsum.photos/seed/numb/300",
-        duration: "3:05"
+        duration: "3:05",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 12,
@@ -105,7 +116,8 @@ export const songs = [
         artistId: "linkin-park",
         album: "Hybrid Theory",
         albumArt: "https://picsum.photos/seed/in-the-end/300",
-        duration: "3:36"
+        duration: "3:36",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 13,
@@ -114,7 +126,8 @@ export const songs = [
         artistId: "three-days-grace",
         album: "Three Days Grace",
         albumArt: "https://picsum.photos/seed/i-hate-everything-about-you/300",
-        duration: "3:51"
+        duration: "3:51",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 14,
@@ -123,7 +136,8 @@ export const songs = [
         artistId: "breaking-benjamin",
         album: "Phobia",
         albumArt: "https://picsum.photos/seed/diary-of-jane/300",
-        duration: "3:20"
+        duration: "3:20",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 15,
@@ -132,7 +146,8 @@ export const songs = [
         artistId: "papa-roach",
         album: "Infest",
         albumArt: "https://picsum.photos/seed/last-resort/300",
-        duration: "3:19"
+        duration: "3:19",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 16,
@@ -141,7 +156,8 @@ export const songs = [
         artistId: "slipknot",
         album: "Vol. 3: The Subliminal Verses",
         albumArt: "https://picsum.photos/seed/duality/300",
-        duration: "4:12"
+        duration: "4:12",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 17,
@@ -150,7 +166,8 @@ export const songs = [
         artistId: "slipknot",
         album: "All Hope Is Gone",
         albumArt: "https://picsum.photos/seed/psychosocial/300",
-        duration: "4:43"
+        duration: "4:43",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 18,
@@ -159,7 +176,8 @@ export const songs = [
         artistId: "bring-me-the-horizon",
         album: "Sempiternal",
         albumArt: "https://picsum.photos/seed/can-you-feel-my-heart/300",
-        duration: "3:47"
+        duration: "3:47",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 19,
@@ -168,7 +186,8 @@ export const songs = [
         artistId: "bring-me-the-horizon",
         album: "That's the Spirit",
         albumArt: "https://picsum.photos/seed/throne/300",
-        duration: "3:32"
+        duration: "3:32",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 20,
@@ -177,7 +196,8 @@ export const songs = [
         artistId: "falling-in-reverse",
         album: "Popular Monster",
         albumArt: "https://picsum.photos/seed/popular-monster/300",
-        duration: "3:40"
+        duration: "3:40",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 21,
@@ -186,7 +206,8 @@ export const songs = [
         artistId: "thirty-seconds-to-mars",
         album: "A Beautiful Lie",
         albumArt: "https://picsum.photos/seed/the-kill/300",
-        duration: "3:52"
+        duration: "3:52",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 22,
@@ -195,7 +216,8 @@ export const songs = [
         artistId: "skillet",
         album: "Awake",
         albumArt: "https://picsum.photos/seed/monster/300",
-        duration: "2:58"
+        duration: "2:58",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 23,
@@ -204,7 +226,8 @@ export const songs = [
         artistId: "three-days-grace",
         album: "One-X",
         albumArt: "https://picsum.photos/seed/animal-i-have-become/300",
-        duration: "3:51"
+        duration: "3:51",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 24,
@@ -213,7 +236,8 @@ export const songs = [
         artistId: "foo-fighters",
         album: "Echoes, Silence, Patience & Grace",
         albumArt: "https://picsum.photos/seed/the-pretender/300",
-        duration: "4:29"
+        duration: "4:29",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 25,
@@ -222,7 +246,8 @@ export const songs = [
         artistId: "green-day",
         album: "American Idiot",
         albumArt: "https://picsum.photos/seed/boulevard-of-broken-dreams/300",
-        duration: "4:20"
+        duration: "4:20",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 26,
@@ -231,7 +256,8 @@ export const songs = [
         artistId: "guns-n-roses",
         album: "Appetite for Destruction",
         albumArt: "https://picsum.photos/seed/sweet-child-o-mine/300",
-        duration: "5:56"
+        duration: "5:56",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 27,
@@ -240,7 +266,8 @@ export const songs = [
         artistId: "bon-jovi",
         album: "Crush",
         albumArt: "https://picsum.photos/seed/its-my-life/300",
-        duration: "3:44"
+        duration: "3:44",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     },
     {
         id: 28,
@@ -249,7 +276,8 @@ export const songs = [
         artistId: "linkin-park",
         album: "Minutes to Midnight",
         albumArt: "https://picsum.photos/seed/what-ive-done/300",
-        duration: "3:25"
+        duration: "3:25",
+        audioUrl: "./assets/audio/Pufino - Rock Me Now.mp3"
     },
     {
         id: 29,
@@ -258,7 +286,8 @@ export const songs = [
         artistId: "breaking-benjamin",
         album: "Phobia",
         albumArt: "https://picsum.photos/seed/the-diary-of-jane/300",
-        duration: "3:20"
+        duration: "3:20",
+        audioUrl: "./assets/audio/Lights of Early Autumn.mp3"
     },
     {
         id: 30,
@@ -267,6 +296,7 @@ export const songs = [
         artistId: "dayseeker",
         album: "Neon Grave",
         albumArt: "https://picsum.photos/seed/dayseeker/300",
-        duration: "3:32"
+        duration: "3:32",
+        audioUrl: "./assets/audio/Yuki&Hana.mp3"
     }
 ];
