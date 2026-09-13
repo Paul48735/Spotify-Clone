@@ -573,6 +573,10 @@ body {
   cursor: pointer;
 }
 
+.playlist-controls button.active {
+  color: #1ed760;
+}
+
 .playlist-controls .playlist-play-button {
   width: 56px;
   height: 56px;

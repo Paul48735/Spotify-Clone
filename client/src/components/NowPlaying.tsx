@@ -1,5 +1,5 @@
-import type { Artist } from '../data/artists'
-import type { Song } from '../data/songs'
+import type { Artist } from '../types/artist'
+import type { Song } from '../types/song'
 
 type NowPlayingProps = {
   song: Song

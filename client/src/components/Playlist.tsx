@@ -1,4 +1,4 @@
-import type { Song } from '../data/songs'
+import type { Song } from '../types/song'
 
 type PlaylistProps = {
   songs: Song[]
@@ -6,11 +6,13 @@ type PlaylistProps = {
   error: string | null
   currentSongId: number | null
   isPlaying: boolean
+  isShuffle: boolean
   onSelectSong: (song: Song) => void
   onPlayPlaylist: () => void
+  onToggleShuffle: () => void
 }
 
-function Playlist({ songs, isLoading, error, currentSongId, isPlaying, onSelectSong, onPlayPlaylist }: PlaylistProps) {
+function Playlist({ songs, isLoading, error, currentSongId, isPlaying, isShuffle, onSelectSong, onPlayPlaylist, onToggleShuffle }: PlaylistProps) {
   return (
     <section className="home">
       <div className="playlist-page">
@@ -20,7 +22,7 @@ function Playlist({ songs, isLoading, error, currentSongId, isPlaying, onSelectS
         </div>
         <div className="playlist-controls">
           <button className="playlist-play-button" type="button" aria-label={isPlaying ? 'Pause playlist' : 'Play playlist'} onClick={onPlayPlaylist}>{isPlaying ? '⏸' : '▶'}</button>
-          <button type="button" aria-label="Shuffle">↝</button><button type="button" aria-label="Add playlist">＋</button><button type="button" aria-label="More options">•••</button>
+          <button className={isShuffle ? 'active' : ''} type="button" aria-label="Shuffle" aria-pressed={isShuffle} onClick={onToggleShuffle}>↝</button><button type="button" aria-label="Add playlist">＋</button><button type="button" aria-label="More options">•••</button>
         </div>
         <div className="playlist-table-heading"><span>#</span><span>Title</span><span>Album</span><span>Duration</span></div>
 

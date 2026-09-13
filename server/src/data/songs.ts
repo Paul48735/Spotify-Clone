@@ -1,5 +1,5 @@
 const rockMeNowAudio = 'http://localhost:5173/src/assets/audio/Pufino%20-%20Rock%20Me%20Now.mp3'
-const yukiAndHanaAudio = 'http://localhost:5173/src/assets/audio/Yuki%26Hana.mp3'
+const yukiAndHanaAudio = 'http://localhost:5173/src/assets/audio/Yuki%20and%20Hana.mp3'
 const lightsOfEarlyAutumnAudio = 'http://localhost:5173/src/assets/audio/Lights%20of%20Early%20Autumn.mp3'
 const destroyMeAudio = 'http://localhost:5173/src/assets/audio/PRESIDENT%20-%20Destroy%20Me.mp3'
 

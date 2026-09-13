@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { songs, type Song } from '../data/songs'
-
-const initialSong = songs.find((song) => song.id === 9) ?? songs[0]
+import type { Song } from '../types/song'
 
 function formatTime(seconds: number) {
   if (!Number.isFinite(seconds)) return '0:00'
@@ -10,9 +8,8 @@ function formatTime(seconds: number) {
   return `${minutes}:${remaining}`
 }
 
-export function usePlayer() {
+export function usePlayer(songs: Song[]) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
-  const [currentSong, setCurrentSong] = useState<Song>(initialSong)
   const [currentSongId, setCurrentSongId] = useState<number | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isShuffle, setIsShuffle] = useState(false)
@@ -21,6 +18,9 @@ export function usePlayer() {
   const [duration, setDuration] = useState(0)
   const [volume, setVolumeState] = useState(0.65)
   const lastVolume = useRef(0.65)
+  const currentSong = songs.find((song) => song.id === currentSongId)
+    ?? songs.find((song) => song.id === 9)
+    ?? songs[0]
 
   if (audioRef.current === null) audioRef.current = new Audio()
 
@@ -43,27 +43,28 @@ export function usePlayer() {
     audio.pause()
     audio.currentTime = 0
     audio.src = song.audioUrl
-    setCurrentSong(song)
     setCurrentSongId(song.id)
     setCurrentTime(0)
     void audio.play()
   }, [currentSongId, togglePlay])
 
   const playNext = useCallback(() => {
-    if (isRepeat && currentSongId !== null) {
+    if (isRepeat && currentSongId !== null && currentSong) {
       selectSong(currentSong, true)
       return
     }
 
     if (isShuffle) {
       const choices = songs.filter((song) => song.id !== currentSongId)
-      selectSong(choices[Math.floor(Math.random() * choices.length)] ?? songs[0], true)
+      const randomSong = choices[Math.floor(Math.random() * choices.length)] ?? songs[0]
+      if (randomSong) selectSong(randomSong, true)
       return
     }
 
     const index = songs.findIndex((song) => song.id === currentSongId)
-    selectSong(songs[(index + 1) % songs.length], true)
-  }, [currentSong, currentSongId, isRepeat, isShuffle, selectSong])
+    const nextSong = songs.length ? songs[(index + 1) % songs.length] : undefined
+    if (nextSong) selectSong(nextSong, true)
+  }, [currentSong, currentSongId, isRepeat, isShuffle, selectSong, songs])
 
   const playPrevious = useCallback(() => {
     const audio = audioRef.current
@@ -74,13 +75,25 @@ export function usePlayer() {
     }
     const index = songs.findIndex((song) => song.id === currentSongId)
     const previousIndex = index <= 0 ? songs.length - 1 : index - 1
-    selectSong(songs[previousIndex], true)
-  }, [currentSongId, selectSong])
+    const previousSong = songs[previousIndex]
+    if (previousSong) selectSong(previousSong, true)
+  }, [currentSongId, selectSong, songs])
 
   const playPlaylist = useCallback(() => {
-    if (currentSongId === null) selectSong(songs[0], true)
-    else togglePlay()
-  }, [currentSongId, selectSong, togglePlay])
+    if (currentSongId !== null) {
+      togglePlay()
+      return
+    }
+
+    if (isShuffle) {
+      const randomSong = songs[Math.floor(Math.random() * songs.length)] ?? songs[0]
+      if (randomSong) selectSong(randomSong, true)
+      return
+    }
+
+    const firstSong = songs[0]
+    if (firstSong) selectSong(firstSong, true)
+  }, [currentSongId, isShuffle, selectSong, songs, togglePlay])
 
   const seek = (percent: number) => {
     const audio = audioRef.current

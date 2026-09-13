@@ -1,3 +1,12 @@
-/assets/audio/
-/assets/images/
 client/src/assets/audio/
+client/node_modules/
+client/dist/
+server/node_modules/
+server/dist/
+client/src/assets/audio/
+assets/audio/
+assets/images/
+server/.env
+.env
+.env.*
+!.env.example

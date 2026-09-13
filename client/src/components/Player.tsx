@@ -1,5 +1,5 @@
 import type { PointerEvent } from 'react'
-import type { Song } from '../data/songs'
+import type { Song } from '../types/song'
 
 type PlayerProps = {
   song: Song
