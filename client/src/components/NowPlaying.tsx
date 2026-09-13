@@ -1,5 +1,6 @@
 import type { Artist } from '../types/artist'
 import type { Song } from '../types/song'
+import './NowPlaying.css'
 
 type NowPlayingProps = {
   song: Song

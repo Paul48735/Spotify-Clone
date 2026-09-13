@@ -1,8 +1,16 @@
+import './Topbar.css'
+
+import { useState } from 'react'
+
 type TopbarProps = {
   onHomeClick: () => void
+  username: string
+  onLogout: () => void
 }
 
-function Topbar({ onHomeClick }: TopbarProps) {
+function Topbar({ onHomeClick, username, onLogout }: TopbarProps) {
+    const [isProfileOpen, setIsProfileOpen] = useState(false)
+
     return (
         <header className="topbar">
         <div className="topbar-left">
@@ -23,7 +31,23 @@ function Topbar({ onHomeClick }: TopbarProps) {
         <div className="topbar-right">
             <button className="topbar-icon small-icon" type="button" aria-label="Notifications">&#128276;</button>
             <button className="topbar-icon small-icon" type="button" aria-label="Friends">&#128101;</button>
-            <button className="profile-button" type="button" aria-label="Profile">H</button>
+            <div className="profile-menu">
+                <button
+                    className="profile-button"
+                    type="button"
+                    aria-label={`${username} profile`}
+                    aria-expanded={isProfileOpen}
+                    onClick={() => setIsProfileOpen((value) => !value)}
+                >
+                    {username.charAt(0).toUpperCase()}
+                </button>
+                {isProfileOpen && (
+                    <div className="profile-dropdown">
+                        <strong>{username}</strong>
+                        <button type="button" onClick={onLogout}>Log out</button>
+                    </div>
+                )}
+            </div>
         </div>
     </header>
     )

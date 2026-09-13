@@ -6,6 +6,9 @@ import { database } from "./config/database.js"
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 import { requireAuth } from "./middleware/auth.js"
+import { playlistRouter } from './routes/playlists.js'
+import { likedSongsRouter } from './routes/likedSongs.js'
+import { playerStateRouter } from './routes/playerState.js'
 
 const app = express()
 const PORT = 3000
@@ -13,8 +16,12 @@ const PORT = 3000
 app.use(cors())
 app.use(express.json())
 
-app.get("/api/songs", (_request: unknown, response: any) => {
-  response.json(songs)
+app.get("/api/songs", (request, response) => {
+  const query = String(request.query.q ?? '').trim().toLowerCase()
+  const result = query
+    ? songs.filter((song) => `${song.title} ${song.artist} ${song.album}`.toLowerCase().includes(query))
+    : songs
+  response.json(result)
 })
 
 app.get("/api/artists", (_request: unknown, response: any) => {
@@ -158,6 +165,10 @@ app.get("/api/auth/me", requireAuth, async (request, response) => {
 
   return response.json(user)
 })
+
+app.use('/api/playlists', playlistRouter)
+app.use('/api/liked-songs', likedSongsRouter)
+app.use('/api/player/state', playerStateRouter)
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)

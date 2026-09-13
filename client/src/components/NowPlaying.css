@@ -1,0 +1,127 @@
+/* Now playing sidebar */
+.now-playing {
+    min-height: 0;
+    background: #121212;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.now-playing-text {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.now-playing-card {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background: #070707;
+}
+
+.now-playing-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.62);
+}
+
+.now-playing-song {
+    font-size: 24px;
+    margin: 0;
+}
+
+.now-playing-artist {
+    font-size: 14px;
+    margin: 6px 0 0;
+    color: #b3b3b3;
+}
+
+.song-overlay {
+    position: absolute;
+    right: 16px;
+    bottom: 20px;
+    left: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.song-info {
+    transform: translateY(15px);
+}
+
+.now-playing-action button {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.about-the-artist {
+    background: #242424;
+    margin-top: 18px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.artist-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    filter: brightness(.62);
+}
+
+.artist-card h2 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.artist-info {
+    padding: 15px;
+}
+
+.artist-info h3 {
+    margin: 0;
+}
+
+.artist-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.artist-stats p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 0;
+}
+
+.follow-button {
+    padding: 8px 18px;
+    border: 1px solid #b3b3b3;
+    border-radius: 999px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.artist-description {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 0;
+}

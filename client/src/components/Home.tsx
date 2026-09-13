@@ -1,4 +1,5 @@
 import { quickCards, releases } from '../data/home'
+import './Home.css'
 
 type HomeProps = { onOpenPlaylist: () => void }
 
