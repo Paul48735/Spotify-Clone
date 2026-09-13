@@ -1,0 +1,172 @@
+.user-playlist {
+    margin-left: 0;
+    padding: 0;
+}
+
+.user-playlist-header {
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+    gap: 22px;
+    padding: 28px;
+    background: linear-gradient(#666, #303030);
+}
+
+.user-playlist-header img,
+.default-cover {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.default-cover {
+    display: grid;
+    place-items: center;
+    background: #282828;
+    color: #aaa;
+    font-size: 70px;
+}
+
+.user-playlist-header h1 {
+    margin: 8px 0;
+    font-size: 52px;
+}
+
+.user-playlist-actions {
+    padding: 24px;
+}
+
+.user-playlist-controls {
+    background: linear-gradient(#242424, #121212);
+}
+
+.user-playlist-controls button.active {
+    color: #1ed760;
+}
+
+.user-playlist-controls .details-button {
+    width: auto;
+    height: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #242424;
+    color: white;
+    font-size: 14px;
+}
+
+.user-playlist-actions button,
+.playlist-editor button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.playlist-editor {
+    display: grid;
+    gap: 10px;
+    margin: 0 24px 24px;
+    padding: 18px;
+    background: #282828;
+    border-radius: 8px;
+}
+
+.playlist-editor input,
+.playlist-editor textarea,
+.find-songs input {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+}
+
+.playlist-editor textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.playlist-tracks,
+.find-songs {
+    margin: 0 24px;
+}
+
+.playlist-tracks .playlist-table-heading,
+.playlist-tracks .song-row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.playlist-track,
+.search-song {
+    display: grid;
+    grid-template-columns: 28px 48px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.playlist-track:hover,
+.search-song:hover {
+    background: #ffffff12;
+}
+
+.playlist-track img,
+.search-song img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.playlist-track small,
+.search-song small {
+    display: block;
+    color: #b3b3b3;
+    margin-top: 4px;
+}
+
+.find-songs {
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.find-songs input {
+    width: min(100%, 500px);
+    margin-bottom: 14px;
+}
+
+.search-song {
+    grid-template-columns: 48px 1fr auto;
+    max-width: 650px;
+}
+
+.search-song button {
+    padding: 7px 18px;
+    border: 1px solid #aaa;
+    border-radius: 999px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.playlist-more,
+.track-more { position: relative; }
+.playlist-more { display: inline-flex; }
+.delete-menu { position:absolute; z-index:8; top:100%; right:0; width:auto!important; padding:10px 18px!important; border-radius:4px!important; background:#282828!important; color:white!important; font-size:14px!important; white-space:nowrap; box-shadow:0 8px 20px #0008; }
+.delete-menu:hover { background:#3e3e3e!important; }
+.user-track-grid { grid-template-columns:30px minmax(180px,2fr) minmax(120px,1fr) 70px 44px; }
+.track-more { opacity:0; }
+.song-row:hover .track-more,
+.track-more:focus-within { opacity:1; }
+.track-more>button:first-child { border:0; background:transparent; color:white; cursor:pointer; }
+.track-more .delete-menu { top:24px; }
+.delete-modal-backdrop { position:fixed; z-index:100; inset:0; display:grid; place-items:center; background:#0009; }
+.delete-modal { width:min(520px,calc(100vw - 32px)); padding:36px; border-radius:8px; background:white; color:black; }
+.delete-modal h2 { margin:0 0 10px; font-size:30px; }
+.delete-modal p { margin:0 0 34px; }
+.delete-modal>div { display:flex; justify-content:flex-end; align-items:center; gap:18px; }
+.delete-modal button { padding:12px 22px; border:0; border-radius:999px; background:transparent; font-size:16px; font-weight:700; cursor:pointer; }
+.delete-modal .confirm-delete { background:#e91429; color:white; }

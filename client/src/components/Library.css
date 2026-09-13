@@ -1,0 +1,128 @@
+/* Library sidebar */
+.library {
+    min-height: 0;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+.library-header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 14px;
+}
+
+.create-button {
+    border: 0;
+    border-radius: 999px;
+    background: #242424;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 17px;
+    color: #fff;
+}
+
+.filter-button {
+    display: flex;
+    margin-left: 20px;
+    gap: 8px;
+}
+
+.library-tools {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.search-library {
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.library-search-input {
+    display: inline-block;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 999px;
+    background: #242424;
+    color: white;
+    font-size: 14px;
+    width: 180px;
+}
+
+.recents-button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: #b3b3b3;
+}
+
+.library-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.library-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.library-item:hover {
+    background: #ffffff0d;
+}
+
+.cover {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.artist-cover {
+    border-radius: 50%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-title {
+    color: white;
+    font-weight: bold;
+}
+
+.item-detail {
+    color: white;
+    font-size: 14px;
+}
+
+.default-library-cover {
+    display: grid;
+    place-items: center;
+    background: #282828;
+    color: #b3b3b3;
+    font-size: 24px;
+}

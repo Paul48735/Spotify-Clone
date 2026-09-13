@@ -1,6 +1,7 @@
-import rockMeNowAudio from '../assets/audio/Pufino - Rock Me Now.mp3'
-import yukiAndHanaAudio from '../assets/audio/Yuki&Hana.mp3'
-import lightsOfEarlyAutumnAudio from '../assets/audio/Lights of Early Autumn.mp3'
+const powerfulMetalcoreAudio = 'http://localhost:5173/src/assets/audio/audiodollar-powerful-metalcore-159916.mp3'
+const progressiveMetalcoreAudio = 'http://localhost:5173/src/assets/audio/audiodollar-progressive-metalcore-177644.mp3'
+const sportsMetalcoreAudio = 'http://localhost:5173/src/assets/audio/audiodollar-sports-sports-energetic-metalcore-521530.mp3'
+const rockMeNowAudio = 'http://localhost:5173/src/assets/audio/Pufino%20-%20Rock%20Me%20Now.mp3'
 
 export type Song = {
     id: number
@@ -22,7 +23,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/the-summoning/300",
         duration: "2:06",
-        audioUrl: rockMeNowAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 2,
@@ -32,7 +33,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/chokehold/300",
         duration: "3:37",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 3,
@@ -42,7 +43,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/granite/300",
         duration: "3:30",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 4,
@@ -62,7 +63,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/ascensionism/300",
         duration: "5:51",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 6,
@@ -72,7 +73,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/are-you-really-okay/300",
         duration: "5:06",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 7,
@@ -82,7 +83,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/rain/300",
         duration: "4:12",
-        audioUrl: rockMeNowAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 8,
@@ -92,7 +93,7 @@ export const songs: Song[] = [
         album: "Take Me Back To Eden",
         albumArt: "https://picsum.photos/seed/take-me-back-to-eden/300",
         duration: "8:20",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: rockMeNowAudio
     },
     {
         id: 9,
@@ -102,7 +103,7 @@ export const songs: Song[] = [
         album: "Even in Arcadia",
         albumArt: "https://i.scdn.co/image/ab67616d00001e02882265cd9bdded9ea9a153b9",
         duration: "5:13",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 10,
@@ -112,7 +113,7 @@ export const songs: Song[] = [
         album: "The Colour and the Shape",
         albumArt: "https://picsum.photos/seed/everlong/300",
         duration: "4:10",
-        audioUrl: rockMeNowAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 11,
@@ -122,7 +123,7 @@ export const songs: Song[] = [
         album: "Meteora",
         albumArt: "https://picsum.photos/seed/numb/300",
         duration: "3:05",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 12,
@@ -132,7 +133,7 @@ export const songs: Song[] = [
         album: "Hybrid Theory",
         albumArt: "https://picsum.photos/seed/in-the-end/300",
         duration: "3:36",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: rockMeNowAudio
     },
     {
         id: 13,
@@ -142,7 +143,7 @@ export const songs: Song[] = [
         album: "Three Days Grace",
         albumArt: "https://picsum.photos/seed/i-hate-everything-about-you/300",
         duration: "3:51",
-        audioUrl: rockMeNowAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 14,
@@ -152,7 +153,7 @@ export const songs: Song[] = [
         album: "Phobia",
         albumArt: "https://picsum.photos/seed/diary-of-jane/300",
         duration: "3:20",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 15,
@@ -162,7 +163,7 @@ export const songs: Song[] = [
         album: "Infest",
         albumArt: "https://picsum.photos/seed/last-resort/300",
         duration: "3:19",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 16,
@@ -182,7 +183,7 @@ export const songs: Song[] = [
         album: "All Hope Is Gone",
         albumArt: "https://picsum.photos/seed/psychosocial/300",
         duration: "4:43",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 18,
@@ -192,7 +193,7 @@ export const songs: Song[] = [
         album: "Sempiternal",
         albumArt: "https://picsum.photos/seed/can-you-feel-my-heart/300",
         duration: "3:47",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 19,
@@ -202,7 +203,7 @@ export const songs: Song[] = [
         album: "That's the Spirit",
         albumArt: "https://picsum.photos/seed/throne/300",
         duration: "3:32",
-        audioUrl: rockMeNowAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 20,
@@ -212,7 +213,7 @@ export const songs: Song[] = [
         album: "Popular Monster",
         albumArt: "https://picsum.photos/seed/popular-monster/300",
         duration: "3:40",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: rockMeNowAudio
     },
     {
         id: 21,
@@ -222,7 +223,7 @@ export const songs: Song[] = [
         album: "A Beautiful Lie",
         albumArt: "https://picsum.photos/seed/the-kill/300",
         duration: "3:52",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 22,
@@ -232,7 +233,7 @@ export const songs: Song[] = [
         album: "Awake",
         albumArt: "https://picsum.photos/seed/monster/300",
         duration: "2:58",
-        audioUrl: rockMeNowAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 23,
@@ -242,7 +243,7 @@ export const songs: Song[] = [
         album: "One-X",
         albumArt: "https://picsum.photos/seed/animal-i-have-become/300",
         duration: "3:51",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 24,
@@ -252,7 +253,7 @@ export const songs: Song[] = [
         album: "Echoes, Silence, Patience & Grace",
         albumArt: "https://picsum.photos/seed/the-pretender/300",
         duration: "4:29",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: rockMeNowAudio
     },
     {
         id: 25,
@@ -262,7 +263,7 @@ export const songs: Song[] = [
         album: "American Idiot",
         albumArt: "https://picsum.photos/seed/boulevard-of-broken-dreams/300",
         duration: "4:20",
-        audioUrl: rockMeNowAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 26,
@@ -272,7 +273,7 @@ export const songs: Song[] = [
         album: "Appetite for Destruction",
         albumArt: "https://picsum.photos/seed/sweet-child-o-mine/300",
         duration: "5:56",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: progressiveMetalcoreAudio
     },
     {
         id: 27,
@@ -282,7 +283,7 @@ export const songs: Song[] = [
         album: "Crush",
         albumArt: "https://picsum.photos/seed/its-my-life/300",
         duration: "3:44",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: sportsMetalcoreAudio
     },
     {
         id: 28,
@@ -302,7 +303,7 @@ export const songs: Song[] = [
         album: "Phobia",
         albumArt: "https://picsum.photos/seed/the-diary-of-jane/300",
         duration: "3:20",
-        audioUrl: lightsOfEarlyAutumnAudio
+        audioUrl: powerfulMetalcoreAudio
     },
     {
         id: 30,
@@ -312,6 +313,6 @@ export const songs: Song[] = [
         album: "Neon Grave",
         albumArt: "https://picsum.photos/seed/dayseeker/300",
         duration: "3:32",
-        audioUrl: yukiAndHanaAudio
+        audioUrl: progressiveMetalcoreAudio
     }
 ];
